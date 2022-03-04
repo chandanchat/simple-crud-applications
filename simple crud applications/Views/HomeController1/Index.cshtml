@@ -1,0 +1,25 @@
+﻿@model simple_crud_applications.Models.Student
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using (Html.BeginForm("create", "Student_", FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <td>Enter your name</td>
+                        <td>@Html.TextBoxFor(m=>m.name)</td>
+                    </tr>
+                    <tr>
+                        <td>Enter your age</td>
+                        <td>@Html.TextBoxFor(a=>a.age)</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2"><input type="submit" value="save"/></td>
+                        </tr>
+                </table>
+            }
+
+
+
